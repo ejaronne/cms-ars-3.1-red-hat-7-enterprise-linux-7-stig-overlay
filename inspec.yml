@@ -11,18 +11,18 @@ inspec_version: ">= 4.0"
 
 <% if ENV['BASELINE'] == 'Low' %>
 depends:
-- name: cms-ars-3.1-red-hat-enterprise-linux-7-stig-overlay
+- name: cms-ars-3.1-low-red-hat-enterprise-linux-7-stig-overlay
   url: https://github.com/CMSgov/cms-ars-3.1-low-red-hat-enterprise-linux-7-stig-overlay/archive/master.tar.gz
 <% end %>
 
 <% if ENV['BASELINE'] == 'Moderate' %>
 depends:
-- name: cms-ars-3.1-red-hat-enterprise-linux-7-stig-overlay
+- name: cms-ars-3.1-moderate-red-hat-enterprise-linux-7-stig-overlay
   url: https://github.com/CMSgov/cms-ars-3.1-moderate-red-hat-enterprise-linux-7-stig-overlay/archive/master.tar.gz
 <% end %>
 
 <% if ENV['BASELINE'] == 'High' %>
 depends:
-- name: cms-ars-3.1-red-hat-enterprise-linux-7-stig-overlay
+- name: cms-ars-3.1-high-red-hat-enterprise-linux-7-stig-overlay
   url: https://github.com/CMSgov/cms-ars-3.1-high-red-hat-enterprise-linux-7-stig-overlay/archive/master.tar.gz
 <% end %>
